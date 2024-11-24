@@ -1,0 +1,716 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: linear-gradient(to left, rgba(177, 175, 0, 0.847), rgba(111, 61, 8, 0.907), rgba(7, 7, 7, 0.797));
+            
+        }
+        body{
+            background-color:rgba(0, 0, 0, 0.636);
+        }
+        #poster{
+           
+            margin: 20px;
+            padding: 0;
+        }
+      
+
+        #forback {
+        
+            background-image: url("https://imgur.com/a/nA1rPio"); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            shadow: 1px 1px 2px rgb(44, 166, 247), 0 0 1em rgb(34, 6, 244), 0 0 2em rgb(42, 1, 13);
+           
+        }
+
+        #hero {
+            margin: 0;
+            padding: 100px;
+            background-color: rgba(71, 6, 106, 0.053);
+            color: whitesmoke;
+            
+            align:left;
+            
+
+        }
+        #heading {
+            background-color: rgba(249, 144, 202, 0.019);
+            background-position:center;
+            text-align:center;
+            font-size: 5vw;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-shadow: 1px 1px 2px rgba(226, 100, 171, 0.351), 0 0 1em rgba(244, 185, 6, 0.879), 0 0 0.2em rgba(255, 18, 18, 0.625);
+            color:rgb(0, 0, 0);
+        }
+
+        #quote {
+            font-size: 15vw;
+            text-align : center;
+            
+            font-family :'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color : rgb(0, 0, 0);
+            text-shadow: 1px 1px 2px rgba(247, 108, 44, 0.864), 0 0 1em rgba(244, 185, 6, 0.879), 0 0 0.2em rgb(42, 1, 13);
+            position : relative ;
+            top : -180px ;
+        }
+
+           /* animation: blink 38s infinite;
+            
+        }
+
+        @keyframes blink {
+            0%, 50% {
+                opacity: 1;
+            }
+            25%, 75% {
+                opacity: 0;
+            }*/
+
+        #bash{
+            text-decoration: underline;
+            color :rgb(255, 255, 255);
+            text-shadow: 1px 1px 2px rgba(9, 232, 102, 0.551), 0 0 1em rgba(150, 231, 250, 0.386), 0 0 0.2em rgba(248, 170, 194, 0.671);
+            background-color : rgba(255, 221, 2, 0.334);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 5vw;
+            position : relative ;
+            top : -25px ;
+            padding: 69px;
+            
+        }
+        .intro {
+            position : relative ;
+            top : -12vw ;
+        }
+
+        #texthead{
+            background-color : rgba(255, 221, 2, 0.125);
+            color : black ;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.447), 0 0 1em rgb(241, 244, 78), 0 0 0.2em rgba(193, 187, 190, 0.781);
+            font-size: 1vw;  
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            position : relative ;
+            right :-28vw ;
+            top : -310px;
+            padding : 5px ;
+            margin : 5px ;
+        }
+        
+        .navbar {
+            background-color: #1815155a;
+            padding: 10px;
+        }
+
+        .navbar ul {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .navbar ul li {
+            display: inline;
+        }
+
+        .navbar ul li a {
+            color: rgba(248, 243, 216, 0.578);
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+        .navbar ul li a:hover {
+            background-color: #23151c76;
+            border-radius: 4px;
+        }
+        
+        #sch{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color:rgba(255, 255, 255, 0.222);
+            background-color:rgba(254, 155, 214, 0.153)
+            
+
+        }
+        .schedule_text{
+            color : rgb(255, 235, 235) ;
+            background-color : rgba(0, 0, 0, 0.477) ;
+            position: relative;
+            left : -400px ;
+            top : -2500px ;
+            margin : 450px ;
+            text-shadow: 1px 1px 2px rgba(255, 222, 33, 0.447), 0 0 1em rgba(255, 255, 252, 0.1), 0 0 0.2em rgba(255, 255, 255, 0.781);
+            
+            
+            
+            
+
+ 
+        }
+        .about_head{
+            color:blanchedalmond;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 4vw;
+           
+            text-transform: uppercase;
+            text-decoration-thickness: 3px;
+            text-decoration-color: rgba(245, 227, 214, 0.888);
+            text-shadow: 1px 1px 2px rgba(154, 233, 142, 0.401), 0 0 1em rgba(244, 121, 6, 0.44), 0 0 0.2em rgba(169, 30, 3, 0.418);
+            font-size: 4em;
+            color: rgba(251, 233, 35, 0.868);
+          /*  animation: blink 2s infinite;
+            
+        }
+
+        @keyframes blink {
+            0%, 50% {
+                opacity: 1;
+            }
+            25%, 75% {
+                opacity: 0;
+            }
+*/
+        }
+
+
+        #events {
+            padding: 50px;
+            text-align: center;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            position: relative;
+            top: -1200px ;
+        }
+
+        #events h2 {
+            margin-bottom: 20px;
+        }
+
+        .event-cards {
+            display: flex;
+            justify-content:center;
+            flex-wrap:wrap;
+        }
+
+        .card {
+            background: #0000007d;
+            padding: 20px;
+            margin: 10px;
+            width: 30%;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        #upcoming{
+            background-color:rgba(69, 85, 88, 0.564);
+            color:rgba(243, 169, 225, 0.99)
+        }
+        #past{
+            background-color:rgba(79, 53, 94, 0.564);
+            color:rgba(226, 219, 95, 0.84)
+        }
+        .text{
+            font-family:Verdana, Geneva, Tahoma, sans-serif
+        }
+
+        .event_time{
+            text-decoration:dotted;
+            text-decoration: underline;
+            text-decoration-thickness:1px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color:black;
+            text-shadow: 1px 1px 2px rgba(245, 112, 116, 0.437), 0 0 1em rgb(223, 19, 185), 0 0 0.2em rgba(221, 177, 0, 0.152);
+        }
+        .event_name{
+            color:rgba(130, 249, 215, 0.662);
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-shadow: 1px 1px 2px rgba(13, 229, 249, 0.938), 0 0 1em rgb(151, 109, 251), 0 0 0.2em rgba(38, 225, 132, 0.5);
+            text-decoration:underline;
+            text-decoration-thickness:1px;
+            text-decoration-color: rgba(80, 230, 69, 0.807);
+            
+        }
+        .club_text{
+            font-size: 1.14vw;
+            background-color :rgba(12, 4, 33, 0.386);
+            color: rgba(119, 246, 227, 0.842);
+            text-shadow: 1px 1px 2px rgba(13, 229, 249, 0.938), 0 0 1em rgb(151, 109, 251), 0 0 0.2em rgba(38, 225, 132, 0.5);
+        }
+        .about_logo{
+            position: relative ;
+            top : -40vw;
+            right: -70vw;
+            
+            
+        }
+        #club{
+            position:relative ;
+            top : -1800px ;
+        }
+        #about_head{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color :rgba(61, 131, 251, 0.885);
+            text-shadow: 1px 1px 2px rgba(14, 1, 11, 0.938), 0 0 1em rgb(151, 109, 251), 0 0 0.2em rgba(38, 225, 132, 0.5);
+            font-size: 90px;
+        }
+        #ending {
+            position : relative ;
+            top : -800px ;
+        }
+
+        footer {
+
+            background-color: #f9deb819;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+
+
+    footer {    
+                position : relative ;
+                top : -100px ;
+                background-color: #f1ebe821;
+                color: white;
+                padding: 20px;
+                text-align: center;
+            }
+            .footer-content p {
+                margin: 10px 0;
+                display: inline;
+            }
+            .social-links {
+                display: inline;
+                padding: 0;
+                text-align: center;
+            }
+            .social-links li {
+                display: inline;
+                margin: 0 10px;
+            }
+            .social-links li a {
+                color: white;
+                text-decoration: none;
+            }
+            #resources{
+                color:bisque;
+                background-color:rgba(64, 2, 17, 0.285);
+            }
+            .re_head{
+                color:#fcaa80e3;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                text-shadow: #470cf9ef;
+                font-size: 3vw;
+            }
+
+            .text{
+                color:rgba(229, 255, 0, 0.832);
+                text-shadow: 1px 1px 2px rgba(228, 188, 10, 0.266), 0 0 1em rgba(251, 109, 196, 0.359), 0 0 0.2em rgba(35, 144, 233, 0.216);
+                text-decoration:underline;
+                text-decoration-thickness:1px;
+                text-decoration-color: rgba(71, 1, 66, 0.807);
+            }
+            .re_head{
+                color:#000000e3;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                
+                text-shadow: 1px 1px 2px rgba(251, 0, 255, 0.89), 0 0 1em rgba(235, 9, 141, 0.501), 0 0 0.2em rgba(205, 85, 0, 0.797);
+                font-size: 3.5vw;
+            }
+
+
+            .x{
+                background-color:rgb(157, 52, 106);
+            }
+            .logo{
+                padding:20px;
+                margin:20px;
+                width:145px;
+                height:200px;
+                
+                display:inline;
+                
+            }
+            .join-container {
+                
+                padding: 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                list-style: none;
+                min-height: 200px; 
+                width: 100%; 
+                background-color: rgba(247, 204, 204, 0.108); 
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(6, 0, 0, 0.862);
+            }
+
+            .join_link {
+                margin-top: 10px; 
+                list-style: none;
+                
+                
+            }
+            
+            #join_but{
+                color :red ;
+                text-shadow: 1px 1px 2px rgba(8, 8, 8, 0.89), 0 0 1em rgba(253, 252, 255, 0.53), 0 0 0.2em rgba(0, 255, 38, 0.797);
+                
+            }
+            .join-list {
+                list-style: none; 
+                padding: 0;      
+                margin: 0;       
+            }
+            #join_us{
+                background-color:rgba(46, 5, 78, 0.134);
+                height:175px;
+            }
+
+ 
+            
+    </style>
+</head>
+<body>
+    <div id = 'forback'>
+
+        <nav class = 'navbar'>
+            <ul>
+                <li> <a href = #club> About Us </a></li>
+                <li> <a href = #events> Events </a></li>
+                <li> <a href = #footer-content> Contact Us </a></li>
+                <li> <a href = #join> Join Us </a></li>
+            </ul>
+        </nav>
+        <section class="logo">
+            <image src = "https://vitbhopal.ac.in/wp-content/uploads/2022/02/VIT-Bhopal-Logo.png" alt="aiclub logo", height="70px">
+            <image src = "https://gitm.goel.edu.in/wp-content/uploads/2021/05/CSI-Logo-e1623395836342.png" alt="club logo" height="70px">
+        </section>
+        <div id="hero">
+            <div id="poster">
+                <div style="position: relative; width: 100%; height: 0; padding-top: 56.2225%; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform;">
+                    <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;"
+                        src="https://www.canva.com/design/DAGXCiWmpKU/kY0Vt6Up4KIVT3WjhJaXeQ/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                    </iframe>
+                </div>
+                <a href="https://www.canva.com/design/DAGXCiWmpKU/kY0Vt6Up4KIVT3WjhJaXeQ/view?utm_content=DAGXCiWmpKU&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a> 
+            </div>
+            <div>
+            <pre id = 'heading'>"be the part of"</pre>
+            <pre id = 'quote'>REVOLUTION </pre>
+            </div>
+
+            <div class = 'intro'>
+                <h1 id = "bash"> ByteBash </h1>
+
+                <div id = 'texthead'>
+                    <pre>Welcome to ByteBash!
+                Get ready for an electrifying coding event where speed meets skill!
+                 ByteBash is all about tackling:
+                quick
+                bite-sized programming challenges
+                all this designed to test your logic, creativity, and problem-solving abilities.
+                           
+                Whether you're a coding enthusiast or a seasoned programmer, this fun-filled competition
+                promises excitement, learning, and the thrill of racing against the clock. 
+                Dive in and show us your coding prowess! </pre>
+
+                </div>
+                <br>
+                <br>
+                <hr>
+                
+                <br>
+                <br>
+                </div>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div  id = 'sch'>
+        <h2 class="about_head"><blink>Schedule of the Day :</blink-182></h2>
+            <div class = 'time_poster'><div style="position: relative; width: 100%; height: 0; padding-top: 141.4286%; 
+                padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(8, 209, 79, 0.16); 
+                margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform;">
+            <iframe loading="lazy" style="position: absolute; width: 900px; height: 1000px; top: 0; right : -50px; 
+                border: none; padding: 0; margin: 0;"
+                src="https://www.canva.com/design/DAGXSm1aAp4/-K8gkApgSIXcozUhgMLtlQ/view?embed" 
+                allowfullscreen="allowfullscreen" allow="fullscreen">
+            </iframe>
+    </div>
+    </div>
+      
+
+                
+                <br>
+    <div class = "schedule_text">
+        <pre>               details are as follows :
+                    1.  enlighten yourself with the divinity and positivity during
+                          the inaugral ceremony
+                    
+                          2.  a surprise speaker session with one '
+                       of the greatest minds of the country
+                        
+                    3.  after a long session, enjoy the state of 
+                       the art food of our partner caterers and dive in
+                         the world of taste
+                    4.  now starts the coding round where you can show out 
+                        all of your skills solve a set of
+                         problem statements within 5 hours and stand a chance
+                         to win our merchendise
+                    5. say goodbye to this day with oujr event end 
+                        ceremony where every participant will get a chance
+                          to present his opinion to the event
+                    6. after all his hustle who does not like a tea break?.
+                       enjoy th break with you friends and compititors with 
+                       a sip of tea
+                    7. RESULTS will be annunced within 7 day
+        </pre>
+    </div>
+    </div>  
+          
+
+    <div id="club">
+        <hr>
+        <h1 id = 'about_head'>About  CSI :</h1>
+        <pre class = 'club_text'> 
+            CSI!!
+         which stands for the computer society of india is not just limited to our campus but 
+        spans across the country. Computer Society of India is a body of computer professionals 
+         in India. It was started on 6 March 1965 by a few computer professionals and has now grown to
+         be the national body representing computer professionals. It has 72 chapters
+         across India, 511 student branches, and 100,000 members
+         The Computer Society of India is a non-profit professional meet to exchange 
+         views and information to learn and share ideas. The wide spectrum of members is 
+         committed to the advancement of theory and practice of Computer Engineering and Technology Systems,
+         Science and Engineering, Information Processing and related Arts and Sciences.
+
+         The Society also encourages and assists professionals to maintain integrity and competence 
+         of the profession and fosters a sense of partnership amongst members. Besides the activities
+         held at the Chapters and Student Branches, the Society also conducts periodic conferences, seminars.
+         The Society is targeted at the IT professionals and also user community at large. Hence, 
+         the membership of the Society is open to all professionals involved in the field of 
+         information technology. The membership categories include individual and institutional. In the
+         individual nmember category there are five grades namely Fellow, Senior, Member, Associate 
+         and Student,whereas institutional membership includes organisations and educational institutions.
+         A professional can also apply for life membership in the society.
+
+         Trusted by 15,000+ Happy Members
+         Being closely associated with Students the Society has developed 
+         a well-established net-work of “Student Branches” all across the country. 
+         CSI has 488 student branches with more than 90,000 Student Volunteers across
+         the nation. The activities conducted for the Students associated with the Society
+         include lecture meetings, seminars, conferences, training programmes, programming
+         contests and practical visits to installations. CSI has a strong Educational 
+         Directorate based at Chennai which undertakes activities related to Certification of
+         professionals related to the latest technologies. 
+         Its recent initiative of distance education in the Business Domain areas offers technology
+         enabled learning supported by personal counseling & expert advice. In an ever changing environment,
+         CSI offers professional counseling being a great need of the hour. And this is done 
+         by being in close contact with it’s young members through
+         various events, conferences, symposia to name a few. CSI regularly organises SEARCC Programming Contest, Alan Turning Quiz, Discover 
+         Thinking Project Contest, On-line Programming Contest etc.
+         for the students.
+        </pre>
+        <span class="about_logo"> <img src = "https://gitm.goel.edu.in/wp-content/uploads/2021/05/CSI-Logo-e1623395836342.png" alt = 'CSI_Logo' >
+        </span>
+    </div>
+    
+    <section id="events">
+        <hr>
+        <div id="upcoming">
+            <h2 class="event_time">Upcoming Events</h2>
+            <p>Wonder how we create the new geniuses? Check out our major events:</p>
+            <div class="event-cards">
+                <div class="card">
+                    <h3 class="event_name"> Fresh Sparks '24 </h3>
+                    <p>gnite Your Tech Journey at VIT Bhopal University! 🌟
+
+                        Join us on October 15th, 2024, as the CSI Student Chapter VIT Bhopal invites students for an exciting day filled with hashtag#technology, hashtag#fun, and hashtag#adventure!
+                        
+                        🎙️ Special Guest
+                        ✨ Shumbul Arifa – Software Development Engineer at Microsoft
+                        Get ready to hear her amazing journey and career insights!
+                        
+                        What's waiting for you?
+                        🎤 Speaker Session | 🧠 Tech Quizzes | 🗺️ Treasure Hunt
+                        
+                        📍 Where: VIT Bhopal University
+                        📅 When: October 15, 2024
+                        
+                        Join us for a day full of fun, learning, and networking, and take your first big step into the world of tech with Fresh Sparks '24! You won’t want to miss this!
+                          
+                    </p>
+                </div>
+                <div class="card">
+                    <h3 class="event_name">Event_2</h3>
+                    <p>Exciting News Unveiled! Join us for “Visterra” - a hands-on project session on CNNs led by the names of our team! 🤖✨ Dive into the world of object detection, create your ML model, deploy it as a web app using
+                          Streamlit and GitHub, and boost your resume for those dream internships! 🚀
+                         Save the date - December 15, 9:30 AM to 1:30 PM. Don’t miss out on this incredible learning opportunity! 
+                         .</p>
+                </div>
+                <div class="card">
+                    <h3 class="event_name">Event_3</h3>
+                    <p> Exciting news! Introducing Genesis - a 2-day online event, featuring a workshop on NLP with Rishit Chugh and a podcast on Projects and Going Abroad with 
+                        Kumar Prakhar. Mark your calendars for 24th and 25th Nov ‘23. Knowledge,
+                         inspiration, and networking await! 🌐🔗 REGISTRATION IS ABSOLUTELY FREE! Link in Bio! #aiclub #vitb #nlp #chatgpt #gpt</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        
+        <div id="past">
+            <h2 class="event_time">Check Out Our Past Events:</h2>
+            <div class="event-cards">
+                <div class="card">
+                    <h3 class="event_name">Past_1</h3>
+                    <p>📢🤖 Get Ready to Conquer AIConic: The Ultimate Coding Hunt! 🏆🔥
+
+                        📅 Date: 26th July 2023
+                        🏛️ Venue: VIT Bhopal Auditorium
+                        ⏰ Time: 10:00am – 6:00pm
+                        
+                        Join us for an unforgettable AI adventure at AIConic! 🚀
+                        
+                        🌟 Embrace the opportunity to learn from the best, Mr. Rahul Mishra - the Expert in Generative AI and Head of Growth at Concept Campus! 🧠💼
+                        
+                        Participate in a mind-bending coding treasure hunt and test your AI skills! 💻
+                        
+                        🔍 Unleash the potential of Artificial Intelligence and secure your spot now!
+                        
+                        🤖🗝️ Don't miss out on this epic event by registering/p>
+                </div>
+                <div class="card">
+                    <h3 class="event_name"> Bootcamp</h3>
+                    <p>💡Are you ready to take your programming skills to the next level and make your vacations count?
+
+                        🏁3 Days - 2 Projects 1 Live Podcast
+                        
+                        🌸 *Spring Bootcamp* is here!
+                        Attend hands-on learning sessions that will help you build these Internship-ready skills on AIML & Web development:
+                        
+                        👉ML
+                        👉Kaggle
+                        👉Python
+                        👉Jupyter Notebook
+                        👉UI/UX
+                        👉HTML
+                        👉CSS
+                        👉Java Script
+                        👉API fetching
+                        👉Github
+                        
+                        💰You get all this for flat ₹99. Offer valid only till 10 March '23
+                        
+                        *FREE* for existing members of the AI Club.
+                        
+                        📚Learn directly from top MNC professionals and gain practical knowledge. Tune in for internship-placement guidance from one of VIT Bhopal's highly successful alumnus - Rohan Sarkar, who received an offer of *35LPA+*.
+                        
+                        📌Mark your calendars for three action-packed days on learning and networking and get ready to elevate your skills to the next level!
+                        
+                        📝Here is the event schedule:
+                        March 10th: Last date for early bird registration
+                        
+                        March 16th: Build an AIML-based model.
+                        
+                        March 17th: Create a web dev project.
+                        
+                        March 18th, 2 PM–4 PM: Discord podcast on placement and internship guidance, with a particular focus on the AIML domain.
+                        </p>
+                </div>
+                <div class="card">
+                    <h3 class="event_name">Past_3</h3>
+                    <p>Unlock the power of AI and change perceptions with The Tech DAIgest! Our mission is to make AI accessible to all. Join us on this exciting 
+                        journey and dive into the limitless possibilities! 🔍 Magazine Link in bio! #AIaccessibility #TechNews
+                         #TheTechDAIgest #ai #ml #aiclub #vitb</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id = "ending">
+        <hr>
+        <section id="resources">
+            <h3 class = "re_head">RESOURCES </h3>
+            <div class="blog">
+                <pre class="text">
+                        Do you know the way we think?
+                            Do you know the way a normal person think?
+                                You want to know about latest tech news or latest updates?</pre>
+                <section class="blog_index">
+                    <p>Dive into a world of insightful articles, thought-provoking discussions, and the latest updates. Our blog is
+                        dedicated to providing in-depth analysis and perspectives on a wide range of topics, from current events and social issues to education
+                        , technology, and personal growth. Whether you're looking to stay informed, get inspired
+                        , or explore new ideas, we've got something for everyone. Join our community of curious minds and start
+                        exploring!
+                    </p>
+            </section> 
+                <ul style="list-style: none; display: flex; align-items: center;">
+
+                    <li style="margin-right: 10px;">Check out our blogs here:</li>
+                
+                    <li>
+                        <a href="https://medium.com/ai-club-vit-bhopal" >
+                            <img src="https://th.bing.com/th/id/R.0927581e090202c04ec490d9e9d68277?rik=pzybfJ6sStS7bg&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fmedium-logo-vector-png-medium-icon-white-on-black-1600.png&ehk=91i%2fAjWf0ygUFD5xar3qWmp3S6LDpeopRUGpuWcRw58%3d&risl=&pid=ImgRaw&r=0" alt="Medium logo" height="50px">
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <div id ="join">
+            <section id='join_us'>
+                <div class="join-container">
+                    <p>
+                        Do you want to be part of the revolution?
+                        <hr>
+                        Do you find yourself as the person who wants to bring change in society?
+                        <hr>
+                        Do You love ai?
+            
+                        Join our team 
+                        be a team member from society!!!
+                    </p>
+                    <div id="footer-content">
+                        
+                        <ul class="join-list">
+                            <li><p>To join our team click the glowing text:</p></li>
+                            <div class = "join_but"><li class="join_link"><a href="https://aivitb.com/">JOIN US</a></li></div>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    
+</body>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<footer>
+    <div id="footer-content">
+        <p>AI Club | Empowering the future with AI. Learn, collaborate, and innovate.</p>
+        <ul class="social-links">
+            <li><a href="https://twitter.com/aiclub"><img src="https://cdn.icon-icons.com/icons2/4029/PNG/512/twitter_x_new_logo_square_x_icon_256075.png" alt="Twitter X logo" width="70px" ></a></li>
+            <li><a href="https://www.instagram.com/aiclub.vitb/"><img src="https://th.bing.com/th/id/OIP.jIjxU37e3484oqVvsn71IQHaHa?rs=1&pid=ImgDetMain" alt="Instagram logo" width="40px", height = 40x></a></li>
+        </ul>
+    </div>
+</footer>
+</html>
